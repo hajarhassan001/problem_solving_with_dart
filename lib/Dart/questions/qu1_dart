@@ -1,0 +1,29 @@
+// convert bool to int 
+// convert map to list
+void main() {
+  print(boolTOint(true));
+  print(boolTOint(false));
+  print(mapTolist({1: 10, 2: 20, 3: 30}));
+}
+
+
+List mapTolist(myMap) {
+  List myValue = [];
+  myMap.forEach((key, value) {
+    myValue.add(key);
+    myValue.add(value);
+  });
+  return myValue;
+}
+
+int boolTOint(bool myboolvalue) {
+  if (myboolvalue == true) {
+    int myintvalue = 1;
+    return myintvalue;
+  } else {
+    int myintvalue = 0;
+    return myintvalue;
+  }
+}
+
+ 
